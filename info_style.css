@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -36,7 +37,11 @@ header {
     top: 120%;
     color: white;
     /* z-index: 9; */
+}
 
+#scrolldown-btn:hover {
+    color: #90a8c3;
+    transition: 0.1s linear;
 }
 
 .info_head_img {
@@ -54,25 +59,75 @@ header {
 
 .topic_list_icon {
     color: white;
-    font-size: 1.2rem;
+    cursor: pointer;
 }
 
-#nav-icon3{
+#dropbtn {
     position: absolute;
     background-color: none;
     background-color: transparent;
     border: none;
-    top: 563px;
+    top: 106%;
     left: 0;
     margin-left: 20px;
- }
+    font-size: 1.4rem;
+}
 
-#movedown{
+.dropup {
+    position: fixed;
+    display: inline-block;
+    top: 565px;
+    left: 20px;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 20px;
+    bottom: 1px;
+    left: 0px;
+    z-index: 1;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: section_header_poppins;
+}
+
+.dropup-content a:last-of-type {
+    border-radius: 0 0 20px 20px;
+}
+
+.dropup-content a:first-of-type {
+    border-radius: 20px 20px 0 0;
+}
+
+
+.dropup-content a:hover {
+    background-color: #ccc
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}
+
+
+#move_workflow {
     position: absolute;
     color: #7D747D;
     top: -8%;
     left: 50%;
 }
+
 .info_categories {
     position: absolute;
     color: white;
@@ -173,7 +228,7 @@ section {
     position: relative;
     width: 1210px;
     height: 463px;
-    background: #64A6BD;
+    background: #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 48.8552px;
 }
@@ -182,10 +237,10 @@ section {
     position: relative;
     width: 145px;
     height: 55px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: #FFFFFF;
+    background: #E0EAED;
     border-radius: 40px;
     margin: 2rem 0 0 7rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
@@ -203,11 +258,12 @@ section {
     position: absolute;
     display: block;
     width: 970px;
-    color: white;
+    color: #64A6BD;
     font-family: section_paragraph_roboto;
     font-size: 1.2rem;
     margin: 120px 0 0 60px;
     line-height: 40px;
+    height: auto;
 }
 
 .media {
@@ -267,6 +323,20 @@ section {
     font-size: 1.6rem;
     font-family: headfont_poppins;
 }
+
+.more {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    cursor: pointer;
+    color: white;
+}
+
+.GameMakeaName {
+    padding-bottom: 20px;
+}
+
+
 
 /* font */
 
