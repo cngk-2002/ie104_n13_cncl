@@ -111,3 +111,32 @@ h2 {
 footer {
   margin-top: 50px;
 }
+
+.search-box{ 
+  background: #6d9886;
+  border-radius: 30px;
+}
+.search-box .search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    width: 0;
+    padding: 0;
+    transition: all 0.25s ease-in-out;
+}
+.search-box:hover .search-text, .search-box .search-text:valid{
+  width: 200px;
+  padding: 0.5rem 1rem;
+}
+.search-box .search-btn{
+  background-color: #6d9886;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+.search-btn{
+  color: #fff;
+}
