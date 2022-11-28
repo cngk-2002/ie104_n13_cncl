@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  /* overflow-x: hidden; */
+  top: 0;
+  left: 0;
+}
+.header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.header a:hover {
+  color: #6d9886;
+}
+ul {
+  list-style-type: none;
+}
+.navbar {
+  background: white;
+  padding: 3rem 2rem;
+  height: 0;
+  min-height: 12vh;
+}
+.navbar .navbar-brand a {
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+  color: #6d9886;
+  font-family: "Josefin Sans", sans-serif;
+}
+.navbar-toggler {
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+/* .navbar-toggler span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border: 1px;
+  background: white;
+}
+.navbar-toggler span + span {
+  margin-top: 4px;
+  width: 10px;
+  margin-left: 4px;
+}
+.navbar-toggler span + span + span {
+  width: 10px;
+  margin-left: 10px;
+} */
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 2rem 1.2rem;
+  font-size: 1.2rem;
+  position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  border-top: 3px solid #6d9886;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  border-top: 3px solid #6d9886;
+  color: #6d9886;
+}
+.navbar-nav button {
+  margin-left: 1rem;
+}
+.navbar-nav .btn {
+  background-color: #6d9886;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+.carousel-inner {
+  max-height: 500px;
+}
+h2 {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.card-img-top {
+  width: 10rem;
+  height: 10rem;
+}
+.card {
+  width: 10rem;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.title a {
+  text-decoration: none;
+  color: black;
+}
+.title a:hover {
+  color: #6d9886;
+}
+footer {
+  margin-top: 50px;
+}
