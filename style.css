@@ -71,10 +71,10 @@ ul {
   border-top: 3px solid #6d9886;
   color: #6d9886;
 }
-.navbar-nav button {
+.navbar-nav > button {
   margin-left: 1rem;
 }
-.navbar-nav .btn {
+.navbar-nav > .btn {
   background-color: #6d9886;
   color: white;
   border-radius: 20px;
