@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "- Nhớ pull về trước khi push code lên repo nha\r - Khi làm gì đó thay đổi trên thư mục ở máy nhà, phải ADD sau đó COMMIT sau đó PUSH lên github. Làm như sau:\r   - ADD: mở git bash (màn hình console) lên, gõ: git add \\*\r   - COMMIT: cũng trên bash, gõ: git commit -m \"nội dụng đã thực hiện\" trong đó cái trong dấu ngoặc kép là ghi chú của việc commit, cái này bắt buộc nhập.\r   - PUSH: cũng trên bash, gõ: git push origin master.\r - Khi ai đó push gì mới lên thì ở máy lấy về bằng cách: gõ trên bash tại thư mục đã khởi tạo git (git init): git pull origin master\r - Hết.",
+  "main": "home.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "star": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cngk-2002/ie104_n13_cncl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cngk-2002/ie104_n13_cncl/issues"
+  },
+  "homepage": "https://github.com/cngk-2002/ie104_n13_cncl#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
