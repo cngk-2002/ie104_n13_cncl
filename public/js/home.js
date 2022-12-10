@@ -1,11 +1,14 @@
-var navItem = document.querySelectorAll('[data-name=nav-item]')
-console.log(navItem)
+let loadMoreBtn = document.querySelector("#more-btn");
+let currentItem = 6;
 
-navItem.forEach((item, index) =>{
-    item.addEventListener('click', ()=>{
-        for(let i = 0; i< navItem.length; i++){
-            navItem[i].classList.remove('active')
-        }
-        item.classList.add('active')
-    })
-})
+loadMoreBtn.onclick = () => {
+  let boxes = [...document.querySelectorAll(".container-fluid_1 .row .col")];
+  for (var i = currentItem; i < currentItem + 6; i++) {
+    boxes[i].style.display = "inline-block";
+  }
+  currentItem += 6;
+
+  if (currentItem >= boxes.length) {
+    loadMoreBtn.style.display = "none";
+  }
+};
