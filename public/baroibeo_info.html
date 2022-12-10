@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>News</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/baroibeoinfo.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- snow animation -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" style="background-color:white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">WFCELEBRITY</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="news.html">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Notification -->
+
+                        <!-- Login -->
+                        <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#loginBtn">
+                            Login
+                        </button>
+                        <!-- Modal Login-->
+                        <div id="loginBtn" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold">Login</h4>
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-mdb-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <!-- Email input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="form2Example1" class="form-control" />
+                                                <label class="form-label" for="form2Example1">Email address</label>
+                                            </div>
+
+                                            <!-- Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="form2Example2" class="form-control" />
+                                                <label class="form-label" for="form2Example2">Password</label>
+                                            </div>
+
+                                            <!-- 2 column grid layout for inline styling -->
+                                            <div class="row mb-4">
+                                                <div class="col d-flex justify-content-center">
+                                                    <!-- Checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="form2Example31" checked />
+                                                        <label class="form-check-label" for="form2Example31">Remember
+                                                            me</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <!-- Simple link -->
+                                                    <a href="#!">Forgot password?</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Submit button -->
+                                            <button type="button" class="btn btn-primary btn-block mb-4">
+                                                Sign in
+                                            </button>
+
+                                            <!-- Register buttons -->
+                                            <div class="text-center">
+                                                <p>Not a member? <a href="#!">Register</a></p>
+                                                <p>or sign up with:</p>
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-google"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-github"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sign up -->
+                        <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+                            Sign up
+                        </button>
+                        <!-- Modal Sign up-->
+                        <div id="signupBtn" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold">Sign up</h4>
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-mdb-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="text-center mb-3">
+                                                <p>Sign up with:</p>
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-google"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-github"></i>
+                                                </button>
+                                            </div>
+
+                                            <p class="text-center">or:</p>
+
+                                            <!-- Name input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="registerName" class="form-control" />
+                                                <label class="form-label" for="registerName">Name</label>
+                                            </div>
+
+                                            <!-- Username input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="registerUsername" class="form-control" />
+                                                <label class="form-label" for="registerUsername">Username</label>
+                                            </div>
+
+                                            <!-- Email input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="registerEmail" class="form-control" />
+                                                <label class="form-label" for="registerEmail">Email</label>
+                                            </div>
+
+                                            <!-- Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="registerPassword" class="form-control" />
+                                                <label class="form-label" for="registerPassword">Password</label>
+                                            </div>
+
+                                            <!-- Repeat Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="registerRepeatPassword"
+                                                    class="form-control" />
+                                                <label class="form-label" for="registerRepeatPassword">Repeat
+                                                    password</label>
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check d-flex justify-content-center mb-4">
+                                                <input class="form-check-input me-2" type="checkbox" value=""
+                                                    id="registerCheck" checked
+                                                    aria-describedby="registerCheckHelpText" />
+                                                <label class="form-check-label" for="registerCheck">
+                                                    I have read and agree to the terms
+                                                </label>
+                                            </div>
+
+                                            <!-- Submit button -->
+                                            <button type="submit" class="btn btn-primary btn-block mb-3">
+                                                Sign up
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-9 col-xl-7">
+                <div class="card">
+                    <div class="rounded-top text-white d-flex flex-row"
+                        style="background-image: url(/images/maxresdefault.jpg); background-size: 100% 100%; height: 250px;">
+                        <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
+                            <img src="/images/beoj.jpg" alt="Generic placeholder image"
+                                class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 1">
+                        </div>
+
+                    </div>
+                    <div class="p-4 text-black" style="background-color: #f8f9fa;">
+                        <div class="d-flex justify-content-end text-center py-1">
+                            <div class="px-3">
+                                <p class="mb-1 h5">380k</p>
+                                <p class="small text-muted mb-0">Followers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 text-black">
+                        <div class="mb-5">
+                            <p class="lead fw-normal mb-1">About</p>
+                            <div class="p-4" style="background-color: #f8f9fa;">
+                                <p class="font-italic mb-1">Thầy Giáo Ba tên thật là Phạm Tấn Trung, còn được biết đến
+                                    với cái tên
+                                    Baroibeo hay Ba Rọi Béo, là một game thủ, huấn luyện chuyên nghiệp của tựa game Liên
+                                    Minh Huyền
+                                    Thoại (LMHT). Thầy Giáo Ba từng là một game thủ chuyên nghiệp của bộ môn LMHT.<br>
+                                    Sau đó, anh trở thành huấn luyện viên (HLV) của Team FFQ. Sau này, anh từ bỏ vị trí
+                                    HLV để tập trung
+                                    vào công việc livestream trên kênh Youtube Ba Rọi Béo của mình. Hiện
+                                    tại, kênh Youtube Ba Rọi Béo của Thầy Giáo Ba đã sở hữu 894 nghìn người đăng ký.
+                                    Trang Fanpage của
+                                    anh cũng thu hút 385 nghìn người theo dõi.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <p class="lead fw-normal mb-0">Highlights</p>
+                            <p class="mb-0"><a href="#!" class="text-muted">Show all</a></p>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col mb-2">
+                                <img src="/images/thayba_img1.png" alt="image 1" class="w-100 rounded-3">
+                            </div>
+                            <div class="col mb-2">
+                                <img src="/images/thayba_img2.png" alt="image 1" class="w-100 rounded-3">
+                            </div>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col">
+                                <iframe class="w-100 rounded-3" width="400" height="250"
+                                    src="https://www.youtube.com/embed/iOVqRDPqGsU" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col">
+                                <iframe class="w-100 rounded-3" width="400" height="250"
+                                    src="https://www.youtube.com/embed/cBKAmZjRRDI" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="container py-5">
+                            <p class="lead fw-normal mb-1">Workflow</p>
+                            <div class="main-timeline-2">
+                                <div class="timeline-2 left-2">
+                                    <div class="card">
+                                        <img src="/images/thay3_timeline1.png" class="card-img-top"
+                                            alt="Responsive image">
+                                        <div class="card-body p-4">
+                                            <h4 class="fw-bold mb-4">Tuyển thủ chuyên nghiệp</h4>
+                                            <p class="text-muted mb-4"><i class="far fa-clock"
+                                                    aria-hidden="true"></i>2014 - 2017</p>
+                                            <p class="mb-0">Trước khi trở nên nổi tiếng thì Phan Tấn Trung cũng là một
+                                                tuyển thủ chuyên nghiệp
+                                                của bộ môn giải trí LMHT (League of
+                                                Legends). Lúc ấy, anh lấy nickname là BaRoiBeo, anh cùng đội của mình đã
+                                                giành lấy nhiều vị trí
+                                                đáng kể trong nền LMHT
+                                                lúc bấy giờ.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-2 right-2">
+                                    <div class="card">
+                                        <img src="/images/thay3_timeline2.png" class="card-img-top"
+                                            alt="Responsive image">
+                                        <div class="card-body p-4">
+                                            <h4 class="fw-bold mb-4">Vai trò huấn luyện viên</h4>
+                                            <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i>
+                                                2018</p>
+                                            <p class="mb-0">Từ giả nghiệp tuyển thủ, BaRoiBeo đã quyết định chuyển sang
+                                                con đường làm HLV cho
+                                                một đội tuyển LMHT Việt Nam, đó chính là FFQ. Đưa đội tuyển FFQ lên được
+                                                top 2 trong giải đấu
+                                                VCS 2018 Summer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-2 left-2">
+                                    <div class="card">
+                                        <img src="/images/thay3_timeline3.png" class="card-img-top"
+                                            alt="Responsive image">
+                                        <div class="card-body p-4">
+                                            <h4 class="fw-bold mb-4">Sự nghiệp streamer</h4>
+                                            <p class="text-muted mb-4"><i class="far fa-clock"
+                                                    aria-hidden="true"></i>2018 - nay</p>
+                                            <p class="mb-0">Không lâu sau khi làm HLV Thầy giáo Ba quyết định từ bỏ vị
+                                                trị đó để “về nhà
+                                                Stream bán khô gà”. Anh bắt
+                                                đầu công việc streamer vì cho rằng
+                                                công việc này sẽ giúp anh bớt áp lực hơn, đồng thời chủ động được thời
+                                                gian.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/UIT.Fanpage" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com.vn/?hl=vi" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">
+                            <i class="fas fa-gem me-3"></i>WF COMPANY
+                        </h6>
+                        <p>
+                            Provide easy search engine for users.
+                            University of Information Technology
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">HTML</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">CSS</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">JavaScript</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Bootstrap</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">
+                            Foundation
+                        </h6>
+                        <p>
+                            <a href="https://www.facebook.com/vandat1510" class="text-reset">Pham Van Dat</a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/tuanmiles2602" class="text-reset">Mai Anh Tuan</a>
+                        </p>
+                        <p>
+                            <a href="facebook.com/kidduWEEB" class="text-reset">Chau Nhat Gia Khiem</a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/bawpsisme/" class="text-reset">Ngo Nhat Huy</a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/hoaithwng" class="text-reset">Huynh Hoai Thuong</a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/nguyencuonglinh19012002" class="text-reset">Nguyen Cuong
+                                Linh</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">Contact</h6>
+                        <p><i class="fas fa-home me-3" style="color:#e94822"></i> Linh Trung, Thu Duc, TP HCM
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3" style="color:#e94822"></i>
+                            info@uit.edu.com
+                        </p>
+                        <p>
+                            <a href="https://www.uit.edu.vn" style="color: #757575!important;">
+                                <i class="fa-solid fa-globe me-3" style="color:#e94822"></i>
+                                https://www.uit.edu.vn
+                            </a>
+                        </p>
+                        <p><i class="fas fa-phone me-3" style="color:#e94822"></i>(028) 372 52002
+                        </p>
+                        <p><i class="fas fa-print me-3" style="color:#e94822"></i>(028) 372 52148
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold">Group 3 - IE104 - UIT</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
