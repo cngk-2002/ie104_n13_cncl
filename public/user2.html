@@ -15,14 +15,14 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="./css/home.css" />
-
   <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!-- <script src="../public/js/signin.js"></script> -->
   <script src="../public/js/user.js"></script>
   <link rel="stylesheet" href="./css/user.css">
+  <link rel="stylesheet" href="./css/user_drop.css">
 
 </head>
 
@@ -65,9 +65,18 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <!-- Login -->
-            <button class="user_btn" id="username_btn" type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="user_btn dropbtn" id="username_btn" type="button" class="btn" data-mdb-toggle="modal"
+                data-mdb-target="#signupBtn">
                 username
               </button>
+              <ul id="myDropdown" class="dropdown-content">
+                <li><a href="index.html">Sign out</a></li>
+                <li><a href="">Your accout</a></li>
+                <li><a href="">Terms</a></li>
+                
+              </ul>
+            </div>
           </ul>
         </div>
       </div>

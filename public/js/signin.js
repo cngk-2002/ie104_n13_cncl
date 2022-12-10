@@ -10,6 +10,10 @@ const firebaseApp = firebase.initializeApp({
   measurementId: "G-QCG84LJ0B4"
 });
 
+// import { collection, getDocs } from "firebase/firestore"; 
+
+
+
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
@@ -40,11 +44,18 @@ const signIn = () =>{
   //login
   firebase.auth().signInWithEmailAndPassword(email, password)
     .then((result)=>{
-      
+
+      db.collection("users").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data()}`);
+        });
+      });
+
       console.log(result.user)
       console.log('login success')
       alert('login success');
       window.location.assign("user2.html");
+    
 
     })
     .catch((e)=>{
@@ -52,6 +63,9 @@ const signIn = () =>{
       console.log(e)
     })
 }
+
+
+//add admin feature
 
 
 
