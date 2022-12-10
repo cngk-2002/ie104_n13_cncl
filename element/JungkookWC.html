@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jungkook (BTS) tỏa sáng ở lễ khai mạc World Cup 2022</title>
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/news.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- snow animation -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" style="background-color:white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">WFCELEBRITY</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="news.html">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <div class="search-container">
+                            <input type="text" placeholder="Search...">
+                            <div class="search"></div>
+                          </div>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <!-- notification -->
+
+                        <!-- Login -->
+                        <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#loginBtn">
+                            Login
+                        </button>
+                        <!-- Modal Login-->
+                        <div id="loginBtn" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold">Login</h4>
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-mdb-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <!-- Email input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="form2Example1" class="form-control" />
+                                                <label class="form-label" for="form2Example1">Email address</label>
+                                            </div>
+
+                                            <!-- Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="form2Example2" class="form-control" />
+                                                <label class="form-label" for="form2Example2">Password</label>
+                                            </div>
+
+                                            <!-- 2 column grid layout for inline styling -->
+                                            <div class="row mb-4">
+                                                <div class="col d-flex justify-content-center">
+                                                    <!-- Checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="form2Example31" checked />
+                                                        <label class="form-check-label" for="form2Example31">Remember
+                                                            me</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <!-- Simple link -->
+                                                    <a href="#!">Forgot password?</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Submit button -->
+                                            <button type="button" class="btn btn-primary btn-block mb-4">
+                                                Sign in
+                                            </button>
+
+                                            <!-- Register buttons -->
+                                            <div class="text-center">
+                                                <p>Not a member? <a href="#!">Register</a></p>
+                                                <p>or sign up with:</p>
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-google"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-github"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sign up -->
+                        <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+                            Sign up
+                        </button>
+                        <!-- Modal Sign up-->
+                        <div id="signupBtn" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold">Sign up</h4>
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-mdb-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="text-center mb-3">
+                                                <p>Sign up with:</p>
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-google"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-github"></i>
+                                                </button>
+                                            </div>
+
+                                            <p class="text-center">or:</p>
+
+                                            <!-- Name input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="registerName" class="form-control" />
+                                                <label class="form-label" for="registerName">Name</label>
+                                            </div>
+
+                                            <!-- Username input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="text" id="registerUsername" class="form-control" />
+                                                <label class="form-label" for="registerUsername">Username</label>
+                                            </div>
+
+                                            <!-- Email input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="registerEmail" class="form-control" />
+                                                <label class="form-label" for="registerEmail">Email</label>
+                                            </div>
+
+                                            <!-- Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="registerPassword" class="form-control" />
+                                                <label class="form-label" for="registerPassword">Password</label>
+                                            </div>
+
+                                            <!-- Repeat Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="registerRepeatPassword"
+                                                    class="form-control" />
+                                                <label class="form-label" for="registerRepeatPassword">Repeat
+                                                    password</label>
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check d-flex justify-content-center mb-4">
+                                                <input class="form-check-input me-2" type="checkbox" value=""
+                                                    id="registerCheck" checked
+                                                    aria-describedby="registerCheckHelpText" />
+                                                <label class="form-check-label" for="registerCheck">
+                                                    I have read and agree to the terms
+                                                </label>
+                                            </div>
+
+                                            <!-- Submit button -->
+                                            <button type="submit" class="btn btn-primary btn-block mb-3">
+                                                Sign up
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Background image -->
+
+    </header>
+    <!-- Single News Start-->
+    <div class="single-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="sn-container">
+                        <h1 class="sn-title">Jungkook (BTS) tỏa sáng ở lễ khai mạc World Cup 2022</h1>
+                        <h3 class="sn-title">Ca sĩ trẻ người Hàn Quốc có vinh dự trình diễn bài hát chủ đề của World Cup
+                            mang tên "Dreamers".</h3>
+                        <div>Sau bản mashup các bài hát chủ đề của các kỳ World Cup trước, Jungkook - em út của nhóm
+                            nhạc nổi tiếng BTS khuấy động bầu không khí bằng bản hit vừa ra mắt mang tên "Dreamers".
+                        </div>
+                        <div class="sn-img">
+                            <img src="/images/jungkookwc.jpg" />
+                        </div>
+                        <div class="sn-content">
+
+                            <p>
+                                Ca khúc với giai điệu sôi động cùng ca từ mang ý nghĩa cổ động tinh thần của các đội
+                                tuyển tham dự World Cup: "Chúng ta là những kẻ mơ mộng, hãy biến những giấc mơ thành sự
+                                thật, bởi chúng ta có thể".
+                            </p>
+                            <p>
+                                Ngoài Jungkook, người hâm mộ còn được thưởng thức giọng hát của nghệ sĩ đa tài Fahad Al
+                                Kubaisi. Anh là ca sĩ, người mẫu kiêm diễn viên nổi tiếng của nước chủ nhà World Cup
+                                2022.
+                            </p>
+
+                            <div class="sn-img">
+                                <img src="/images/jungkookwc1.jpg" />
+                            </div>
+                            <p>
+                                Jungkook là main vocal (hát chính) của ban nhạc nam nổi tiếng thế giới BTS. Lần đầu tiên
+                                kể từ năm 1998, CĐV mới lại được chứng kiến một ca sĩ solo biểu diễn ở lễ khai mạc sự
+                                kiện bóng đá toàn cầu.
+                            </p>
+                            <div class="sn-img">
+                                <img src="/images/jungkookwc2.jpg" />
+                            </div>
+                            <p>
+                                Cách đây 24 năm, Ricky Martin cũng làm điều tương tự cùng ca khúc bất hủ "The Cup Of
+                                Life". Trên mạng xã hội, CĐV Hàn Quốc và quốc tế dành nhiều lời khen cho màn trình diễn
+                                tự tin của chàng trai 25 tuổi. "Niềm tự hào của K-Pop và châu Á" là cụm từ fan dành cho
+                                Jungkook. Đây có thể là bước đệm vững chắc cho sự nghiệp solo của em út BTS.
+                            </p>
+
+                            <div class="tn-title">
+                                <a href="">Đen "vượt mặt" Sơn Tùng trong bảng xếp hạng âm nhạc trực tuyến cuối
+                                    năm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sn-related">
+                        <h2>Related News</h2>
+                        <div class="row sn-slider">
+                            <div class="col-md-4">
+                                <div class="sn-img">
+                                    <img src="/images/jungkook.jpg" />
+                                    <div class="sn-title">
+                                        <a href="">Jungkook (BTS) tỏa sáng ở lễ khai mạc World Cup</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sn-img">
+                                    <img src="/images/ro7.jpg" />
+                                    <div class="sn-title">
+                                        <a href="">C.Ronaldo gia nhập CLB Al-Nassr</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sn-img">
+                                    <img src="/images/linhngocdam.jpg" />
+                                    <div class="sn-title">
+                                        <a href="">Linh Ngọc Đàm hóa quý cô thập niên 90</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="sidebar-widget">
+                            <h2 class="sw-title">In This Category</h2>
+                            <div class="news-list">
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="/images/rose.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Rosé (BLACKPINK) và "tai nạn" micro</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="/images/mp3&saka.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Đại chiến Anh - Pháp tứ kết World Cup</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="/images/tranthanh.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Trấn Thành lên tiếng trước tin đồn dè bỉu MONO</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="/images/mixi.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Độ Mixi tổng kết dự án từu thiện cuối năm</a>
+                                    </div>
+                                </div>
+                                <div class="nl-item">
+                                    <div class="nl-img">
+                                        <img src="/images/cr7.jpg" />
+                                    </div>
+                                    <div class="nl-title">
+                                        <a href="">Ronaldo: Mất trắng MU 14 triệu euro, quay sang đòi Juventus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="sidebar-widget">
+                            <div class="tab-news">
+                                <ul class="nav nav-pills nav-justified">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="pill" href="#featured">Featured</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#popular">Popular</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="featured" class="container tab-pane active">
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/jungkook.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Jungkook (BTS) tỏa sáng ở lễ khai mạc World Cup</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/thuychi.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Thùy Chi chính thức trở lại sau Ca sĩ mặt nạ</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/linhngocdam.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Linh Ngọc Đàm hóa quý cô thập niên 90</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/greyd.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Grey D: "Khi mình yêu thì người yêu sẽ là trung tâm của vũ
+                                                    trụ"</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/ro7.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">C.Ronaldo gia nhập CLB Al-Nassr</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="popular" class="container tab-pane fade">
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/twice.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">TWICE cán mốc 10 triệu bản album tại Hàn Quốc</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/messi.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Dani Alves: 'Mọi thứ với Argentina đều thông qua Messi'</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/codau.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Đọ nhan sắc của các cô dâu làng game Việt khi diện váy
+                                                    cưới</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/thaygiaoba.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">Loạt streamer gặp vấn đề vì bản quyền YouTube</a>
+                                            </div>
+                                        </div>
+                                        <div class="tn-news">
+                                            <div class="tn-img">
+                                                <img src="/images/rsz_mono.jpg" />
+                                            </div>
+                                            <div class="tn-title">
+                                                <a href="">MONO tiết lộ bản hit đình đám có liên quan một người phụ
+                                                    nữ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h2 class="sw-title">Tags Cloud</h2>
+                            <div class="tags">
+                                <a href="news.html">Sports</a>
+                                <a href="news.html">Streamer</a>
+                                <a href="news.html">K-POP</a>
+                                <a href="news.html">V-POP</a>
+                                <a href="news.html">Artist</a>
+                                <a href="news.html">J-POP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Single News End-->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/UIT.Fanpage" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.google.com.vn/?hl=vi" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">
+              <i class="fas fa-gem me-3"></i>WF COMPANY
+            </h6>
+            <p>
+              Provide easy search engine for users.
+              University of Information Technology
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">HTML</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">CSS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">JavaScript</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Bootstrap</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">
+              Foundation
+            </h6>
+            <p>
+              <a href="https://www.facebook.com/vandat1510" class="text-reset">Pham Van Dat</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/tuanmiles2602" class="text-reset">Mai Anh Tuan</a>
+            </p>
+            <p>
+              <a href="facebook.com/kidduWEEB" class="text-reset">Chau Nhat Gia Khiem</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/bawpsisme/" class="text-reset">Ngo Nhat Huy</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/hoaithwng" class="text-reset">Huynh Hoai Thuong</a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/nguyencuonglinh19012002" class="text-reset">Nguyen Cuong Linh</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color:#e94822">Contact</h6>
+            <p><i class="fas fa-home me-3" style="color:#e94822"></i> Linh Trung, Thu Duc, TP HCM
+            </p>
+            <p>
+              <i class="fas fa-envelope me-3" style="color:#e94822"></i>
+              info@uit.edu.com
+            </p>
+            <p>
+              <a href="https://www.uit.edu.vn" style="color: #757575!important;">
+              <i class="fa-solid fa-globe me-3" style="color:#e94822"></i>
+              https://www.uit.edu.vn
+            </a>
+            </p>
+            <p><i class="fas fa-phone me-3" style="color:#e94822"></i>(028) 372 52002
+            </p>
+            <p><i class="fas fa-print me-3" style="color:#e94822"></i>(028) 372 52148
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2022 Copyright:
+          <a class="text-reset fw-bold" >Group 3 - IE104 - UIT</a>
+        </div>
+        <!-- Copyright -->
+  </footer>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
