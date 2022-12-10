@@ -154,9 +154,6 @@ ul {
   font-family: italic_pops;
 }
 
-.navbar-nav{
-  
-}
 
 .navbar {
   padding: 10px 10px;
@@ -263,10 +260,10 @@ ul {
   margin-bottom: 50px;
   margin-top: 0.5px;
 }
-.more-btn {
+#more-btn {
   text-align: center;
 }
-.more-btn .btn {
+#more-btn .btn {
   border-radius: 20px;
   background-color: #e94822;
   font-size: 12px;
@@ -419,4 +416,15 @@ h5 {
 /* dang nhap */
 .hidden{
   display: none;
+}
+.container-fluid_1 .row .col {
+  display: none;
+}
+.container-fluid_1 .row .col:nth-child(1),
+.container-fluid_1 .row .col:nth-child(2),
+.container-fluid_1 .row .col:nth-child(3),
+.container-fluid_1 .row .col:nth-child(4),
+.container-fluid_1 .row .col:nth-child(5),
+.container-fluid_1 .row .col:nth-child(6) {
+  display: inline-block;
 }
