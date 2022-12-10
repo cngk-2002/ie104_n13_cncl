@@ -1,11 +1,14 @@
 .dropbtn {
+    margin-top: 10px;
+    margin-bottom: 0px;
     background-color: #3498DB;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 20px !important; 
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 18px;
+    border-radius: 18px !important;
+    font-family: italic_poppins;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -40,3 +43,8 @@
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+  @font-face {
+    font-family: italic_poppins;
+    src: url(/element/font/Poppins-Italic.ttf);
+  }

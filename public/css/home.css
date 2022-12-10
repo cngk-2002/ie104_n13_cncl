@@ -154,7 +154,9 @@ ul {
   font-family: italic_pops;
 }
 
-
+.navbar-nav{
+  
+}
 
 .navbar {
   padding: 10px 10px;
@@ -413,4 +415,8 @@ h5 {
   background: #e94822;
   border-radius: 50px;
   width: 80px;
+}
+/* dang nhap */
+.hidden{
+  display: none;
 }

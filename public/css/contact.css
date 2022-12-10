@@ -69,7 +69,7 @@ a:hover {
   font-size: 13px;
 }
 
-.btn,
+.btn2,
 .form-control,
 .custom-select {
   height: 45px;
@@ -92,7 +92,7 @@ a:hover {
   border-color: #000;
 }
 
-.btn {
+.btn2 {
   border: none;
   border-radius: 0;
   font-size: 11px;
@@ -101,7 +101,7 @@ a:hover {
   border-radius: 30px !important;
 }
 
-.btn.btn-primary {
+.btn2.btn-primary {
   border-radius: 30px;
   background: #4d80e4;
   color: #fff;
@@ -109,12 +109,12 @@ a:hover {
   box-shadow: 0 15px 30px 0 rgba(77, 128, 228, 0.2);
 }
 
-.btn:hover {
+.btn2:hover {
   color: #fff;
 }
 
-.btn:active,
-.btn:focus {
+.btn2:active,
+.btn2:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;

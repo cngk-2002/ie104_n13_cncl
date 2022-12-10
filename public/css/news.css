@@ -198,6 +198,11 @@ body {
 
 /* search bar */
 
+.btn{
+    position: relative;
+    top: -12px;
+}
+
 .search-container {
     position: absolute;
     margin: auto;

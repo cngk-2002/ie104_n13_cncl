@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/user_drop.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/home.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js" integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/dropdown.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" style="background-color: white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">WFCELEBRITY</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" data-file="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-file="thankyou.html">CATEGORIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-file="news.html">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-file="contactform2.html">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" data-login="false">
+                        <!-- Login -->
+                        <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#loginBtn">
+                            Login
+                        </button>
+                        <!-- Modal Login-->
+                        <div id="loginBtn" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold">Login</h4>
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-mdb-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <!-- Email input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="emaillogin" class="form-control" />
+                                                <label class="form-label" for="emaillogin">Email address</label>
+                                            </div>
+
+                                            <!-- Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="passwordlogin" class="form-control" />
+                                                <label class="form-label" for="passwordlogin">Password</label>
+                                            </div>
+
+                                            <div class="row mb-4">
+                                                <div class="col d-flex justify-content-center">
+                                                    <!-- Checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="form2Example31" checked />
+                                                        <label class="form-check-label" for="form2Example31">Remember
+                                                            me</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <!-- Simple link -->
+                                                    <a href="#!">Forgot password?</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Submit button -->
+                                            <button type="button" onclick="signIn()"
+                                                class="btn btn-primary btn-block mb-4">
+                                                Sign in
+                                            </button>
+
+                                            <!-- Register buttons -->
+                                            <div class="text-center">
+                                                <p>Not a member? <a href="#!">Register</a></p>
+                                                <p>or sign up with:</p>
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-google"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sign up -->
+                        <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+                            Sign up
+                        </button>
+                        <!-- Modal Sign up-->
+                        <div id="signupBtn" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title font-weight-bold">Sign up</h4>
+                                        <button type="button" class="btn-close" aria-label="Close"
+                                            data-mdb-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- action="/ie104_n13_cncl/public/admintest.html" -->
+                                        <form>
+                                            <div class="text-center mb-3">
+                                                <p>Sign up with:</p>
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </button>
+
+                                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                                    <i class="fab fa-google"></i>
+                                                </button>
+                                            </div>
+
+                                            <p class="text-center">or:</p>
+
+                                            <!-- Email input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="email" id="email" class="form-control" required />
+                                                <label class="form-label" for="email">Email</label>
+                                            </div>
+
+                                            <!-- Password input -->
+                                            <div class="form-outline mb-4">
+                                                <input type="password" id="password" class="form-control" required />
+                                                <label class="form-label" for="password">Password</label>
+                                            </div>
+
+                                            <!-- Checkbox -->
+                                            <div class="form-check d-flex justify-content-center mb-4">
+                                                <input class="form-check-input me-2" type="checkbox" value=""
+                                                    id="registerCheck" checked
+                                                    aria-describedby="registerCheckHelpText" />
+                                                <label class="form-check-label" for="registerCheck">
+                                                    I have read and agree to the terms
+                                                </label>
+                                            </div>
+
+                                            <!-- Submit button -->
+                                            <button type="submit" onclick="signUp()"
+                                                class="btn btn-primary btn-block mb-3">
+                                                Sign up
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul id="login" data-login="true">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="user_btn dropbtn" id="username_btn" type="button" class="btn" data-mdb-toggle="modal"
+                              data-mdb-target="#signupBtn">
+                              username
+                            </button>
+                            <ul id="myDropdown" class="dropdown-content">
+                              <li><a id="logout-btn" href="#">Sign out</a></li>
+                              <li><a href="">Your accout</a></li>
+                              <li><a href="">Terms</a></li>
+                              
+                            </ul>
+                          </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- Notification -->
+        </nav>
+        <!-- Background image -->
+    </header>
+    <div id="root">
+
+    </div>
+</body>
+<script src="../public/js/navhold.js"></script>
+<script src="../public/js/signin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+<script src="js/home.js"></script>
+
+
+</html>
