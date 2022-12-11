@@ -19,7 +19,9 @@
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js" integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js"
+        integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/dropdown.js"></script>
 </head>
 
@@ -101,7 +103,9 @@
 
                                             <!-- Register buttons -->
                                             <div class="text-center">
-                                                <p>Not a member? <a href="#!">Register</a></p>
+                                                <p>Not a member? <a type="button" style="color: #3b71ca;"
+                                                        data-mdb-toggle="modal"
+                                                        data-mdb-target="#signupBtn">Register</a></p>
                                                 <p>or sign up with:</p>
                                                 <button type="button" class="btn btn-link btn-floating mx-1">
                                                     <i class="fab fa-facebook-f"></i>
@@ -181,17 +185,17 @@
                     </ul>
                     <ul id="login" data-login="true">
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="user_btn dropbtn" id="username_btn" type="button" class="btn" data-mdb-toggle="modal"
-                              data-mdb-target="#signupBtn">
-                              username
+                            <button onclick="myFunction()" class="user_btn dropbtn" id="username_btn" type="button"
+                                class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+                                username
                             </button>
                             <ul id="myDropdown" class="dropdown-content">
-                              <li><a id="logout-btn" href="#">Sign out</a></li>
-                              <li><a href="profileuser.html">Your accout</a></li>
-                              <li><a href="">Terms</a></li>
-                              
+                                <li><a id="logout-btn" href="#">Sign out</a></li>
+                                <li><a href="profileuser.html">Your accout</a></li>
+                                <li><a href="">Terms</a></li>
+
                             </ul>
-                          </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -203,9 +207,15 @@
 
     </div>
 </body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
 
 <script src="../public/js/navhold.js"></script>
 <script src="../public/js/signin.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>

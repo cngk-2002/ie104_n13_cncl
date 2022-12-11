@@ -260,7 +260,6 @@ ul {
 .card:hover {
   transform: scale(1.1);
   z-index: 1000;
-  cursor: pointer;
 }
 .row {
   margin-bottom: 50px;
