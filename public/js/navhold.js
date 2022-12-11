@@ -1,14 +1,6 @@
 function LoadHTML (filename){
     if(filename){
-        const applyHTML = document.getElementById('root')
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                applyHTML.innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("GET", filename, true);
-        xhttp.send();
+        $("#root").load(filename)
     }
 }
 
@@ -27,9 +19,7 @@ menu.forEach((element, index) =>{
     element.addEventListener('click', () =>{
         const html = element.getAttribute('data-file')
         console.log(html)
-        const applyHTML = document.getElementById('root')
-        applyHTML.innerHTML=""
-        $("#root").load(html);
+        LoadHTML(html);
 
         //remove active
         menu.forEach((item) => {
