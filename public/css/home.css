@@ -146,14 +146,13 @@ ul {
   list-style-type: none;
 }
 
-.user_btn{
+.user_btn {
   border-radius: 10px;
   margin-right: 20px;
   border-width: 2px;
   padding: 5px 20px;
   font-family: italic_pops;
 }
-
 
 .navbar {
   padding: 10px 10px;
@@ -253,7 +252,7 @@ ul {
   margin-left: 10px;
 }
 
-.bigcard{
+.bigcard {
   border: none;
 }
 
@@ -420,7 +419,7 @@ h5 {
   width: 80px;
 }
 /* dang nhap */
-.hidden{
+.hidden {
   display: none;
 }
 .container-fluid_1 .row .col {

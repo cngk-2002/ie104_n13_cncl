@@ -1,5 +1,6 @@
 let loadMoreBtn = document.querySelector("#more-btn");
 let currentItem = 6;
+console.log("load file js");
 
 loadMoreBtn.onclick = () => {
   let boxes = [...document.querySelectorAll(".container-fluid_1 .row .col")];
@@ -12,4 +13,3 @@ loadMoreBtn.onclick = () => {
     loadMoreBtn.style.display = "none";
   }
 };
-
