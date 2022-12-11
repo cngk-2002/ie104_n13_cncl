@@ -34,503 +34,711 @@
     <div class="snowflake">❄</div>
   </div>
   <header class="header">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg" style="background-color: white">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="#">WFCELEBRITY</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">CATEGORIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./news.html">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <!-- Login -->
+              <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#loginBtn">
+                Login
+              </button>
+              <!-- Modal Login-->
+              <div id="loginBtn" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title font-weight-bold">Login</h4>
+                      <button type="button" class="btn-close" aria-label="Close" data-mdb-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form2Example1" class="form-control" />
+                          <label class="form-label" for="form2Example1">Email address</label>
+                        </div>
 
-    <!-- Background image -->
-    <div class="p-5 text-center bg-image" style="background-image: url('/images/mask_bg.jpg'); height: 600px">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">WELCOME TO <span>WF HOME</span></h1>
-            <h4 class="mb-3">
-              Follow your celebrity recent activities, work times and more
-            </h4>
-            <a class="btn btn-outline-light btn-lg" style="border: 2px solid #e94822" href="#movetothis"
-              role="button">START</a>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form2Example2" class="form-control" />
+                          <label class="form-label" for="form2Example2">Password</label>
+                        </div>
+
+                        <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                              <label class="form-check-label" for="form2Example31">Remember me</label>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <!-- Simple link -->
+                            <a href="#!">Forgot password?</a>
+                          </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-primary btn-block mb-4">
+                          Sign in
+                        </button>
+
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>Not a member? <a href="#!">Register</a></p>
+                          <p>or sign up with:</p>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                          </button>
+
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-github"></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sign up -->
+              <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+                Sign up
+              </button>
+              <!-- Modal Sign up-->
+              <div id="signupBtn" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title font-weight-bold">Sign up</h4>
+                      <button type="button" class="btn-close" aria-label="Close" data-mdb-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="text-center mb-3">
+                          <p>Sign up with:</p>
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                          </button>
+
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+
+                          <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-github"></i>
+                          </button>
+                        </div>
+
+                        <p class="text-center">or:</p>
+
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="registerName" class="form-control" />
+                          <label class="form-label" for="registerName">Name</label>
+                        </div>
+
+                        <!-- Username input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="registerUsername" class="form-control" />
+                          <label class="form-label" for="registerUsername">Username</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="registerEmail" class="form-control" />
+                          <label class="form-label" for="registerEmail">Email</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="registerPassword" class="form-control" />
+                          <label class="form-label" for="registerPassword">Password</label>
+                        </div>
+
+                        <!-- Repeat Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="registerRepeatPassword" class="form-control" />
+                          <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                            aria-describedby="registerCheckHelpText" />
+                          <label class="form-check-label" for="registerCheck">
+                            I have read and agree to the terms
+                          </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-3">
+                          Sign up
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <!-- Notification -->
+        <div class="dropdown">
+          <a class="me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bell"></i>
+            <span class="badge bg-danger badge-dot"></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a id="noti_img1" class="dropdown-item" href="/public/JungkookWC.html"><img style="height: 100px"
+                  alt="" />Jungkook (BTS) khuấy động
+                khai mạc World Cup</a>
+            </li>
+            <li>
+              <a id="noti_img2" class="dropdown-item" href="/public/Monosinger.html"><img style="height: 100px"
+                  alt="" />Ca
+                sĩ MONO phản ứng khi bị
+                nghi ngờ giới tính</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: #000; text-align: right">View more</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Background image -->
+      <div class="p-5 text-center bg-image" style="background-image: url('/images/mask_bg.jpg'); height: 600px">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">WELCOME TO <span>WF HOME</span></h1>
+              <h4 class="mb-3">
+                Follow your celebrity recent activities, work times and more
+              </h4>
+              <a class="btn btn-outline-light btn-lg" style="border: 2px solid #e94822" href="#movetothis"
+                role="button">START</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="title">
+      <a href="#" id="movetothis"> POPULAR CELEB </a>
+    </div>
+
+    <div class="h-search-form">
+      <form action="#">
+        <input type="search" name="search" placeholder="Search..." id="search-bar" />
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="container-fluid_1 overflow-hidden text-center">
+      <div class="row row-cols-2 row-cols-md-6 gy-6 g-md-5">
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_1.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Messi</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/leomessi"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/LeoMessiMedia"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/leomessi/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/Messi_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_2.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Mono</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/mono.hng"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mono.hng/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/Mono_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_3.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Son Tung MTP</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/MTP.Fan"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/sontungmtp777"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sontungmtp/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/SonTung_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_4.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Tran Thanh</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/TranThanh_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_5.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Ba Roi Beo</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/baroibeo_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/JustinBieber_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="#!" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="#!" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="#!" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="#!" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="#!" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-search="famous-people">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="#!" class="btn">View</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div class="title">
-    <a href="#" id="movetothis"> POPULAR CELEB </a>
-  </div>
-
-  <div class="h-search-form">
-    <form action="#">
-      <input type="search" name="search" placeholder="Search..." id="search-bar" />
-      <button id="search-btn">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </form>
-  </div>
-
-  <div class="container-fluid_1 overflow-hidden text-center">
-    <div class="row row-cols-2 row-cols-md-6 gy-6 g-md-5">
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_1.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Messi</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/leomessi"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/LeoMessiMedia"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/leomessi/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('Messi_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_2.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Mono</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/mono.hng"><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/mono.hng/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('Mono_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_3.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Son Tung MTP</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/MTP.Fan"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/sontungmtp777"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/sontungmtp/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('SonTung_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_4.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Tran Thanh</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('TranThanh_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_5.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Ba Roi Beo</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('baroibeo_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('JustinBieber_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#!" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#!" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#!" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#!" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#!" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col" data-search="famous-people">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="https://www.facebook.com/JustinBieber"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/justinbieber"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/justinbieber/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#!" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="more-btn">
-    <button type="button" class="btn">MORE</button>
-  </div>
-
-  <div class="title">
-    <a href="#"> RECENT </a>
-  </div>
-
-  <div class="container-fluid overflow-hidden text-center">
-    <div class="row row-cols-2 row-cols-md-6 gy-6 g-md-5">
-      <div class="col">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_1.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Messi</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('Messi_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_2.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Mono</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('Mono_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_3.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Son Tung MTP</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('SonTung_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_4.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Tran Thanh</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('TranThanh_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_5.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Ba Roi Beo</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a class="btn" onclick="LoadHTML('baroibeo_info.html')">View</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 12rem">
-          <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
-          <div class="card-body">
-            <h5 class="card-title">Justin Bieber</h5>
-            <div class="socials-icon">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a onclick="LoadHTML('JustinBieber_info.html')" class="btn">View</a>
-          </div>
-        </div>
-      </div>
+    <div id="more-btn">
+      <button type="button" class="btn">MORE</button>
     </div>
 
-  </div>
-  <!-- Customer Support -->
-  <section class="section services-section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="title">
-          <a href="#"> CUSTOMER SUPPORT </a>
+    <div class="title">
+      <a href="#"> RECENT </a>
+    </div>
+
+    <div class="container-fluid overflow-hidden text-center">
+      <div class="row row-cols-2 row-cols-md-6 gy-6 g-md-5">
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_1.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Messi</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/Messi_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_2.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Mono</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/Mono_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_3.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Son Tung MTP</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/SonTung_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_4.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Tran Thanh</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/TranThanh_info.html')" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_5.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Ba Roi Beo</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a class="btn" onclick="LoadHTML('public/baroibeo_info.html')">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 12rem">
+            <img src="/images/img_card_6.jpg" class="card-img-top" alt="Fissure in Sandstone" />
+            <div class="card-body">
+              <h5 class="card-title">Justin Bieber</h5>
+              <div class="socials-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a onclick="LoadHTML('public/JustinBieber_info.html')" class="btn">View</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- feaure box -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="feature-box-1">
-            <div class="icon">
-              <i class="fa fa-user"></i>
+
+    </div>
+    <!-- Customer Support -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="title">
+            <a href="#"> CUSTOMER SUPPORT </a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Your Account</h5>
+                <p>In your account, you can see and manage your info, activity, security options, and privacy
+                  preferences.
+                  <a href="#">Read more here!</a>
+                </p>
+              </div>
             </div>
-            <div class="feature-content">
-              <h5>Your Account</h5>
-              <p>In your account, you can see and manage your info, activity, security options, and privacy preferences.
-                <a href="#">Read more here!</a>
+          </div>
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4" onclick="">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-comment"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Contact Us</h5>
+                <p>Contact us for answers to all of your questions or to sign up for our services! WFCelebrity is
+                  the world's leading online celebrity news update service.</p>
+              </div>
+            </div>
+          </div>
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="feature-box-1">
+              <div class="icon">
+                <i class="fa fa-cog"></i>
+              </div>
+              <div class="feature-content">
+                <h5>Advanced Options</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque mauris id eleifend
+                  commodo.
+                  Donec in justo
+                  sapien. Ut sit amet mollis nibh.</p>
+              </div>
+            </div>
+          </div>
+          <!-- / -->
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/UIT.Fanpage" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.google.com.vn/?hl=vi" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
+                <i class="fas fa-gem me-3"></i>WF COMPANY
+              </h6>
+              <p>
+                Provide easy search engine for users. University of Information
+                Technology
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">HTML</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">CSS</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">JavaScript</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Bootstrap</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
+                Foundation
+              </h6>
+              <p>
+                <a href="https://www.facebook.com/vandat1510" class="text-reset">Pham Van Dat</a>
+              </p>
+              <p>
+                <a href="https://www.facebook.com/tuanmiles2602" class="text-reset">Mai Anh Tuan</a>
+              </p>
+              <p>
+                <a href="facebook.com/kidduWEEB" class="text-reset">Chau Nhat Gia Khiem</a>
+              </p>
+              <p>
+                <a href="https://www.facebook.com/bawpsisme/" class="text-reset">Ngo Nhat Huy</a>
+              </p>
+              <p>
+                <a href="https://www.facebook.com/nguyencuonglinh19012002" class="text-reset">Nguyen Cuong Linh</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
+                Contact
+              </h6>
+              <p>
+                <i class="fas fa-home me-3" style="color: #e94822"></i> Linh
+                Trung, Thu Duc, TP HCM
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3" style="color: #e94822"></i>
+                info@uit.edu.com
+              </p>
+              <p>
+                <a href="https://www.uit.edu.vn" style="color: #757575 !important">
+                  <i class="fa-solid fa-globe me-3" style="color: #e94822"></i>
+                  https://www.uit.edu.vn
+                </a>
+              </p>
+              <p>
+                <i class="fas fa-phone me-3" style="color: #e94822"></i>(028)
+                372 52002
+              </p>
+              <p>
+                <i class="fas fa-print me-3" style="color: #e94822"></i>(028)
+                372 52148
               </p>
             </div>
           </div>
         </div>
-        <!-- feaure box -->
-        <div class="col-sm-6 col-lg-4" onclick="">
-          <div class="feature-box-1">
-            <div class="icon">
-              <i class="fa fa-comment"></i>
-            </div>
-            <div class="feature-content">
-              <h5>Contact Us</h5>
-              <p>Contact us for answers to all of your questions or to sign up for our services! WFCelebrity is
-                the world's leading online celebrity news update service.</p>
-            </div>
-          </div>
-        </div>
-        <!-- feaure box -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="feature-box-1">
-            <div class="icon">
-              <i class="fa fa-cog"></i>
-            </div>
-            <div class="feature-content">
-              <h5>Advanced Options</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque mauris id eleifend commodo.
-                Donec in justo
-                sapien. Ut sit amet mollis nibh.</p>
-            </div>
-          </div>
-        </div>
-        <!-- / -->
+      </section>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold">Group 3 - IE104 - UIT</a>
       </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <div>
-        <a href="https://www.facebook.com/UIT.Fanpage" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.twitter.com" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.google.com.vn/?hl=vi" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="https://www.instagram.com/" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
-              <i class="fas fa-gem me-3"></i>WF COMPANY
-            </h6>
-            <p>
-              Provide easy search engine for users. University of Information
-              Technology
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">HTML</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">CSS</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">JavaScript</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Bootstrap</a>
-            </p>
-          </div>
-
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
-              Foundation
-            </h6>
-            <p>
-              <a href="https://www.facebook.com/vandat1510" class="text-reset">Pham Van Dat</a>
-            </p>
-            <p>
-              <a href="https://www.facebook.com/tuanmiles2602" class="text-reset">Mai Anh Tuan</a>
-            </p>
-            <p>
-              <a href="facebook.com/kidduWEEB" class="text-reset">Chau Nhat Gia Khiem</a>
-            </p>
-            <p>
-              <a href="https://www.facebook.com/bawpsisme/" class="text-reset">Ngo Nhat Huy</a>
-            </p>
-            <p>
-              <a href="https://www.facebook.com/nguyencuonglinh19012002" class="text-reset">Nguyen Cuong Linh</a>
-            </p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4" style="color: #e94822">
-              Contact
-            </h6>
-            <p>
-              <i class="fas fa-home me-3" style="color: #e94822"></i> Linh
-              Trung, Thu Duc, TP HCM
-            </p>
-            <p>
-              <i class="fas fa-envelope me-3" style="color: #e94822"></i>
-              info@uit.edu.com
-            </p>
-            <p>
-              <a href="https://www.uit.edu.vn" style="color: #757575 !important">
-                <i class="fa-solid fa-globe me-3" style="color: #e94822"></i>
-                https://www.uit.edu.vn
-              </a>
-            </p>
-            <p>
-              <i class="fas fa-phone me-3" style="color: #e94822"></i>(028)
-              372 52002
-            </p>
-            <p>
-              <i class="fas fa-print me-3" style="color: #e94822"></i>(028)
-              372 52148
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-      © 2022 Copyright:
-      <a class="text-reset fw-bold">Group 3 - IE104 - UIT</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- <script src="../public/js/navhold.js"></script>
+      <!-- Copyright -->
+    </footer>
+    <!-- <script src="../public/js/navhold.js"></script>
   <script src="../public/js/signin.js"></script> -->
-  <!-- Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-  <!-- MDB -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
-  <script src="./public/js/home.js"></script>
-  <script src="./public/js/signin.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="./public/js/home.js"></script>
+    <script src="./public/js/signin.js"></script>
 </body>
 
 </html>
