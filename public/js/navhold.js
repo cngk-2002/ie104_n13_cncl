@@ -29,7 +29,7 @@ menu.forEach((element, index) =>{
         console.log(html)
         const applyHTML = document.getElementById('root')
         applyHTML.innerHTML=""
-        $("#root").load(html);
+        LoadHTML($("#root").load(html));
 
         //remove active
         menu.forEach((item) => {
