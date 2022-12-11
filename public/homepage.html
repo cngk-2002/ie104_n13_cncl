@@ -19,8 +19,11 @@
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js" integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js"
+        integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/dropdown.js"></script>
+    <link rel="stylesheet" href="./css/notification.css">
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                             <a class="nav-link active" aria-current="page" href="#" data-file="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Categories.html" data-file="">CATEGORIES</a>
+                            <a class="nav-link" href="Categories.html" data-file="thankyou.html">CATEGORIES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-file="news.html">NEWS</a>
@@ -48,6 +51,85 @@
                             <a class="nav-link" href="#" data-file="contactform2.html">CONTACT</a>
                         </li>
                     </ul>
+                    
+<div class = "notification" id="notification">
+    <a href = "#">
+    <div class = "notBtn" href = "#">
+      <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+      <div class = "number">2</div>
+      <i class="fas fa-bell"></i>
+        <div class = "box">
+          <div class = "display">
+            <div class = "nothing"> 
+              <i class="fas fa-child stick"></i> 
+              <div class = "cent">Looks Like your all caught up!</div>
+            </div>
+            <div class = "cont"><!-- Fold this div and try deleting evrything inbetween -->
+
+               
+               <div class = "sec">
+                 <a href = "">
+                 <div class = "profCont">
+                 <img class = "profile" src = "../images/img5.jpg">
+                  </div>
+                 <div class = "txt">Son Tung just have another highlight</div>
+                <div class = "txt sub">11/12 - 9:35 pm</div>
+                 </a>
+              </div>
+               <div class = "sec">
+                 <a href = "">
+                 <div class = "profCont">
+                 <img class = "profile" src = "../images/img1.jpg">
+                  </div>
+                 <div class = "txt">Messi have a new trophies</div>
+                <div class = "txt sub">11/12 - 4:04 pm</div>
+                 </a>
+              </div>
+               <div class = "sec">
+                 <a href = "">
+                 <div class = "profCont">
+                 <img class = "profile" src="../images/img_card_5.jpg">
+                  </div>
+                 <div class = "txt">Baroibeo have a new event</div>
+                <div class = "txt sub">11/12 - 10:37 am</div>
+                 </a>
+              </div>
+               <div class = "sec">
+                 <a href = "">
+                 <div class = "profCont">
+                 <img class = "profile" src = "../images/transparent-gmail-icon-png.png">
+                  </div>
+                 <div class = "txt">your contact form has been summitted</div>
+                <div class = "txt sub">11/12 - 7:30 pm</div>
+                 </a>
+              </div>
+               
+               <div class = "sec">
+                 <a href = "">
+                 <div class = "profCont">
+                 <img class = "profile" src = "../images/img_card_2.jpg">
+                  </div>
+                 <div class = "txt">New celebrity for you: Mono</div>
+                <div class = "txt sub">11/12 - 1:34 pm</div>
+                 </a>
+              </div>
+               <div class = "sec">
+                 <a href = "">
+                 <div class = "profCont">
+                 <img class = "profile" src = "../images/tranthanh-2.jpg">
+                  </div>
+                 <div class = "txt">Tran Thanh has finished his film</div>
+                <div class = "txt sub">11/12 - 10:20 am</div>
+                 </a>
+              </div>
+           </div>
+          </div>
+       </div>
+    </div>
+      </a>
+  </div>
+  
+  
                     <ul class="navbar-nav ml-auto" data-login="false">
                         <!-- Login -->
                         <button type="button" class="btn" data-mdb-toggle="modal" data-mdb-target="#loginBtn">
@@ -101,7 +183,9 @@
 
                                             <!-- Register buttons -->
                                             <div class="text-center">
-                                                <p>Not a member? <a href="#!">Register</a></p>
+                                                <p>Not a member? <a type="button" style="color: #3b71ca;"
+                                                        data-mdb-toggle="modal"
+                                                        data-mdb-target="#signupBtn">Register</a></p>
                                                 <p>or sign up with:</p>
                                                 <button type="button" class="btn btn-link btn-floating mx-1">
                                                     <i class="fab fa-facebook-f"></i>
@@ -181,17 +265,17 @@
                     </ul>
                     <ul id="login" data-login="true">
                         <div class="dropdown">
-                            <button onclick="myFunction()" class="user_btn dropbtn" id="username_btn" type="button" class="btn" data-mdb-toggle="modal"
-                              data-mdb-target="#signupBtn">
-                              username
+                            <button onclick="myFunction()" class="user_btn dropbtn" id="username_btn" type="button"
+                                class="btn" data-mdb-toggle="modal" data-mdb-target="#signupBtn">
+                                username
                             </button>
                             <ul id="myDropdown" class="dropdown-content">
-                              <li><a id="logout-btn" href="#">Sign out</a></li>
-                              <li><a href="profileuser.html">Your accout</a></li>
-                              <li><a href="">Terms</a></li>
-                              
+                                <li><a id="logout-btn" href="#">Sign out</a></li>
+                                <li><a href="profileuser.html">Your accout</a></li>
+                                <li><a href="">Terms</a></li>
+
                             </ul>
-                          </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -203,12 +287,13 @@
 
     </div>
 </body>
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <script src="../public/js/navhold.js"></script>
 <script src="../public/js/signin.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
@@ -218,7 +303,7 @@
     crossorigin="anonymous"></script>
 <!-- MDB -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
-<script src="js/home.js"></script>
+<!-- <script src="js/home.js"></script> -->
 
 
 </html>

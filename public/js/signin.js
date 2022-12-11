@@ -54,6 +54,7 @@ firebase.auth().onAuthStateChanged((user)=>{
         document.getElementById("username_btn").innerHTML=username;
   }
   else{
+    document.getElementById('notification').classList.add('hidden')
     login[0].classList.remove('hidden')
     login[1].classList.add('hidden')
   }

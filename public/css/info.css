@@ -53,6 +53,11 @@
     transform: translateX(0px);
   }
 }
+
+body{
+  background-image: url(/images/infopage_background.jpg);
+}
+
 .snowflake {
   position: fixed;
   top: -10%;
