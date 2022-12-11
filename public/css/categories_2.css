@@ -11,11 +11,6 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-
-body{
-  background-image: url(/images/infopage_background.jpg);
-}
-
 .header a:hover {
   color: #e94822;
 }
@@ -83,42 +78,11 @@ ul {
   margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
 }
 .title a {
-  color: black;
-}
-.h-search-form {
-  width: 70%;
-  position: relative;
-}
-.h-search-form input {
-  width: 100%;
-  padding: 0 30px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: capitalize;
-  position: relative;
   color: #e94822;
-  height: 50px;
-}
-.h-search-form button {
-  position: absolute;
-  right: 6px;
-  height: 40px;
-  border: none;
-  top: 4px;
-  color: white;
-  background: #e94822;
-  border-radius: 50px;
-  width: 80px;
-}
-.card-body .card-title {
-  /* margin-top: 35px; */
   font-family: "Permanent Marker", cursive;
-  color: #e94822;
-  font-size: 30px;
 }
 .card-img-top {
   width: 70%;
@@ -142,22 +106,70 @@ ul {
   z-index: 1000;
   cursor: pointer;
 }
-.container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.row {
+  margin-bottom: 50px;
+  margin-top: 0.5px;
 }
-.pagination li {
-  display: inline-block;
-  margin: 5px;
+#more-btn {
+  text-align: center;
+  padding-bottom: 30px;
 }
-.pagination li a {
-  color: #eaeaea;
-  text-decoration: none;
+#more-btn .btn {
+  border-radius: 20px;
+  background-color: #e94822;
+  font-size: 12px;
+  transition: all 0.3s;
+  color: #ececec;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+h5 {
   font-size: 15px;
-  line-height: 45px;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
-.previous-page,
-.next-page {
-  background-color: black;
-  border-radius: 10px;
+.card-title {
+  margin-bottom: 10px;
+}
+.socials-icon {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.socials-icon i {
+  font-size: 20px;
+  color: #e94822;
+  padding: 0 5px;
+}
+.card .btn {
+  background-color: #e94822;
+  color: white;
+  margin-top: 10px;
+}
+.h-search-form {
+  width: 30%;
+  margin: auto;
+  position: relative;
+}
+.h-search-form input {
+  width: 100%;
+  padding: 0 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  position: relative;
+  color: #e94822;
+  height: 50px;
+}
+.h-search-form button {
+  position: absolute;
+  right: 6px;
+  height: 40px;
+  border: none;
+  top: 4px;
+  color: white;
+  background: #e94822;
+  border-radius: 50px;
+  width: 80px;
 }

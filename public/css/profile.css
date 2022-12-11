@@ -3,6 +3,7 @@
 
 
 .main-body {
+  position: relative;
     padding: 15px;
 }
 .card {
@@ -213,6 +214,22 @@ ul {
   position: relative;
   color: black;
 }
+
+.card:hover {
+  transform: scale(1.0) !important; 
+}
+
+.space{
+  margin-top: 30px;
+}
+
+.leftcard{
+  position: relative;
+  margin: 0;
+  width: 485px;
+  height: 550px;
+}
+
 /* .navbar-expand-lg .navbar-nav .nav-link:after {
   content: "";
   position: absolute;
