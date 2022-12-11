@@ -392,7 +392,7 @@ h5 {
   padding-left: 15px;
 }
 .h-search-form {
-  width: 50%;
+  width: 30%;
   margin: auto;
   position: relative;
 }
@@ -433,3 +433,5 @@ h5 {
 .container-fluid_1 .row .col:nth-child(6) {
   display: inline-block;
 }
+
+
