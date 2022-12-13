@@ -9,3 +9,4 @@
 - Hết.
 
 `clone về vào public -> homepage.html và chạy live server (or local host) là xem được ạ.`
+hoặc xem qua link deploy: https://cngk-2002.github.io/ie104_n13_cncl/public/homepage.html
