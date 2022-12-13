@@ -21,9 +21,8 @@ const signUp = () => {
 
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
-
   firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then((result) => {
+  .then((result) => {
       // Signed in 
       // document.write("you are signed up");
       console.log(result);

@@ -14,19 +14,21 @@ $(document).ready(function () {
     }
   };
 
-//search sscript
+  //search sscript
 
   var search = document.getElementById('search-bar')
 
-  search.addEventListener('change',(e) =>{
-    let searchValue = e.target.value;
-    let data = document.querySelectorAll("[data-search='famous-people']")
-    data.forEach((item)=>{
-      if (item.innerText.toLowerCase().includes(searchValue.toLowerCase())) {
-        item.style.display = "inline-block";
-      } else {
-        item.style.display = "none";
-      }
-    })
+  search.addEventListener('keypress', (e) => {
+    if (e.key == 'Enter') {
+      let searchValue = e.target.value;
+      let data = document.querySelectorAll("[data-search='famous-people']")
+      data.forEach((item) => {
+        if (item.innerText.toLowerCase().includes(searchValue.toLowerCase())) {
+          item.style.display = "inline-block";
+        } else {
+          item.style.display = "none";
+        }
+      })
+    }
   })
 });
