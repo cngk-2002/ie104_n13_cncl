@@ -8,4 +8,4 @@
 - Khi ai đó push gì mới lên thì ở máy lấy về bằng cách: gõ trên bash tại thư mục đã khởi tạo git (git init): git pull origin master
 - Hết.
 
-!important: clone về vào public -> homepage.html và chạy live server (or local host) là xem được ạ.
+`clone về vào public -> homepage.html và chạy live server (or local host) là xem được ạ.`
