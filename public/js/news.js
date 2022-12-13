@@ -8,7 +8,7 @@
     $('.tn-slider').slick({
         autoplay: true,
         infinite: true,
-        dots: false,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1
     });
@@ -16,9 +16,9 @@
     
     // Category News Slider
     $('.cn-slider').slick({
-        autoplay: false,
+        autoplay: true,
         infinite: true,
-        dots: false,
+        dots: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [
